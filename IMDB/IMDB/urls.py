@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
-from IMDB_app import urls 
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('movie/',include('IMDB_app.urls'))
+    path('movie/',include('IMDB_app.api.urls'))
 ]
