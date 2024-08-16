@@ -20,5 +20,8 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('imdb/',include('IMDB_app.api.urls'))
+    path('imdb/',include('IMDB_app.api.urls')),
+    path('user/', include('User_app.api.urls')),
+    
+    # path('api-auth', include('rest_framework.urls')),
 ]
